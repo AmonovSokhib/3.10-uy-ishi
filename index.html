@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>10-dars</title>
+		<link rel="stylesheet" href="./bootstrap5_2/css/bootstrap.min.css" />
+		<script src="./bootstrap5_2/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h2 class="text-center mt-5 mb-3">Movies catolog</h2>
+
+			<div class="row gx-5">
+				<div class="col-4">
+					<div>
+						<form>
+							<input type="text" class="form-control" placeholder="ave" />
+							<input type="text" class="form-control mt-3" placeholder="5" />
+							<select class="form-select mt-3">
+								<option selected>all</option>
+							</select>
+							<input
+								class="form-control mt-3"
+								list="datalistOptions"
+								placeholder="Rating"
+							/>
+							<datalist id="datalistOptions">
+								<option value="high to low"></option>
+								<option value="low to high"></option>
+							</datalist>
+						</form>
+						<div class="d-grid gap-2 mt-3">
+							<button class="btn btn-primary">Search</button>
+						</div>
+						<h1 class="mt-4">Bookmarked movies</h1>
+						<div class="list-group">
+							<div class="list-group-item list-group-item-action">
+								Avengers:Infinity War
+								<button class="d-block btn btn-danger mt-2">Remove</button>
+							</div>
+
+							<div class="list-group-item list-group-item-action">
+								The Avengers
+								<button class="d-block btn btn-danger mt-2">Remove</button>
+							</div>
+							<div class="list-group-item list-group-item-action">
+								12 Years a Slave
+								<button class="d-block btn btn-danger mt-2" type="button">
+									Remove
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-8">
+					<div>
+						<h5>Search results: 39</h5>
+						<div class="alert alert-primary" role="alert">
+							Use the form on the left to search for a movie
+						</div>
+						<div class="row" id="row-card"></div>
+					</div>
+					<nav class="row">
+						<div class="col-12 d-flex justify-content-center">
+							<ul class="pagination pagination-md mt-4">
+								<li class="page-item active" aria-current="page">
+									<span class="page-link">1</span>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<script src="./js/movies.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
